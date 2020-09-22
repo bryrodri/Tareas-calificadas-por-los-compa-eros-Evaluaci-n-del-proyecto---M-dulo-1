@@ -1,0 +1,51 @@
+<div	class="container content">
+    <div	class="row">
+
+      <div	class="col-md-12">
+        <span	class="anchor"	id="formLogin"></span>
+        <!-- form	card	login	with	validation	feedback	-->
+        <div class="card	card-outline-secondary">
+            <div	class="card-header">
+                <h3 class="mb-0">Whishlist</h3>
+            </div>
+            <div class="card-body">
+                <form>
+                <div class="form-group">
+                    <label	for="nombre">Nombre</label>
+                    <input	type="text"	class="form-control"	id="nombre"	placeholder="Ingresar	nombre..." #nombre>
+                </div>
+
+                
+                <div class="text-center">
+                <button	type="submit"	class="btn	btn-primary offset-md-4"(click)="guardar(nombre.value)">Guardar!</button>
+
+                
+                <button	type="submit"	class="btn	btn-primary offset-md-4"(click)="borrar(nombre.value)">Borrar</button>
+                </div>
+            
+
+                </form>
+            </div>
+        </div>
+
+        
+
+    </div>
+</div>
+
+    <hr	class="mb-5">
+
+
+</div>
+
+<ul class="list-group">
+<app-destino-viajes *ngFor="let x of destinos" [destino]="x"></app-destino-viajes>
+</ul>
+
+
+<!-- <div class="container content">
+    <div class="row">
+
+<app-destino-viajes *ngFor="let x of destinos" [destino]="x"></app-destino-viajes>
+    </div>
+</div> -->
